@@ -1,0 +1,39 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0af6b3ef1.js" crossorigin="anonymous"></script>
+    <title>Responsive Top Navigation</title>
+    <link rel="stylesheet" href="topnav.css">
+</head>
+<body>
+    <nav class="topnav" id="Topnav">
+        <ul>
+            <li><a href="#" class="hover span">Home</a></li>
+            <li><a href="#" class="hover none">News</a></li>
+            <li><a href="#" class="hover none">Contact</a></li>
+            <li><a href="#" class="hover none">About</a></li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-circle-chevron-down"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h3>Responsive Topnav Example</h3>
+    <p>Resize the browser window to see how it works.</p>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("Topnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</html>
